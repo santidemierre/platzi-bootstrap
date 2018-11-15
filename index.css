@@ -1,0 +1,41 @@
+.text-platzi {
+    color: #97c93e !important; /* Para que pise cualquier otro color que pueda llegar a tener */
+}
+
+#header img {
+    width: 100px;
+}
+
+#main .carousel-inner img  { /* Los img que estan dentro del .carousel-inner que estan dentro del #main */
+    max-height: 70vh; /* vh --> es como poner el 70% del alto disponible por el navegador */
+    object-fit: cover; /* Mantiene la proporción original de las imágenes */
+    filter: grayscale(70%); /* ponemos las imágenes en una escala de grises del 70% */ 
+}
+
+#carousel {
+    position: relative; /* Lo hacemos para que este overlay se expanda por todo el alto y ancho del carrucel, 
+                        lo mismo que abajo, #carousel .overlay*/
+}
+
+#carousel .overlay { /* Digamos que el overlay es la capa que está por encima de la imagen */
+    position: absolute; /* Lo hacemos para que este overlay se expanda por todo el alto y ancho del carrucel  */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* Que no tenga espacio de ningún lado */
+    background-color: rgba(0,0,0,0.5); 
+    color: white;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row { /* Ambos, container y row que ocupen el 100% para poder centrar el texto */
+    height: 100%;
+}
+
+#footer {
+    background: linear-gradient(90deg, #1c3643 0, #273b47 25%, #1e5372);
+}
+#footer a {
+    color: white;
+}
