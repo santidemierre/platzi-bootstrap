@@ -2,6 +2,19 @@
     color: #97c93e !important; /* Para que pise cualquier otro color que pueda llegar a tener */
 }
 
+.btn-platzi {
+    background-color: #97c93e;
+    color: white;
+}
+
+.btn-platzi:hover {
+    background-color: #79a032; 
+}
+
+#header a {
+    color: white;
+}
+
 #header img {
     width: 100px;
 }
@@ -31,6 +44,15 @@
 #carousel .overlay .container,
 #carousel .overlay .row { /* Ambos, container y row que ocupen el 100% para poder centrar el texto */
     height: 100%;
+}
+
+#place-time {
+    background-color: #343a40;
+    color: white;
+}
+
+#place-time img {
+    max-width: 100%;
 }
 
 #footer {
